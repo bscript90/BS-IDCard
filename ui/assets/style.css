@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+.passaport-container {
+    width: 100;
+    height: 100%;
+    position: absolute;
+    left: 30%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
+.passaport-container .page {
+    /* background-color: red; */
+    overflow: hidden;
+
+}
+
+.passaport-container .page.first {
+    background-image: url('./img/front.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.passaport-container .page.last {
+    background-image: url('./img/back.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.passaport-container .page.left {
+    background-image: url('./img/page.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.passaport-container .page.right {
+
+    background-image: url('./img/page2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.passaport-container .page .textarea {
+    margin: 2vw;
+}
+
+.passaport-container .page .textarea textarea {
+    width: 100%;
+    height: 72vh;
+    resize: none;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: black;
+    text-shadow: #000000 1px 0 10px;
+    font-style: normal;
+}
+
+.firstpage {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+}
+
+.firstpage .topinfo {
+    position: relative;
+    background-image: url('./img/frame.png');
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.frame .photo {
+    position: absolute;
+    background-image: url('https://placehold.co/600x400');
+    background-position: center;
+    background-size: cover;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    cursor: pointer;
+}
+
+.bottominfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1vw;
+    gap: 1vw;
+}
+
+.bottominfo .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: #000000 1px 0 10px;
+    font-size: 1.2vw;
+}
+
+.bottominfo .group .label {
+    text-align: left;
+}
+
+.bottominfo .group input {
+    border: none;
+    outline: none;
+    font-size: 1.2vw;
+    background: none;
+    text-align: center;
+    color: black;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    text-shadow: #000000 1px 0 10px;
+    font-weight: 800;
+    font-style: italic;
+    border-bottom: 0.1vw solid rgb(0, 0, 0);
+    border-radius: 0.3vw;
+}
+
+.input-container {
+    position: absolute;
+    width: 35vw;
+    height: 80vh;
+    background-image: url('./img/page.png');
+    background-position: center;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1vw;
+}
+
+.input-container .header {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: black;
+    text-shadow: #000000 10px 0 10px;
+    font-style: normal;
+    font-size: 2vw;
+    padding-top: 1vw;
+}
+
+.input-container .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2vw;
+    margin-right: 1vw;
+    text-align: center;
+    align-items: center;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: black;
+    text-shadow: #000000 1px 0 10px;
+    font-size: 1.4vw;
+}
+
+.input-container .group select,
+.input-container .group select:focus,
+.input-container .group input {
+    border: none;
+    font-size: 1.4vw;
+    outline: none;
+    background: none;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: black;
+    text-shadow: #000000 1px 0 10px;
+    text-align: right;
+   
+
+}
+
+.input-container .group button {
+    width: 18vw;
+    height: 18vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    outline: none;
+    transition: .5s;
+    background-image: url('./img/stamp.png');
+    background-position: center;
+    background-size: cover;
+    opacity: .5;
+}
+.input-container .group button:hover {
+    /* background-color: red; */
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.input-container .group button:active {
+    transform: scale(1.25);
+}
+
+.imageinput {
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 2vw;
+    background: linear-gradient(#776d3e, #242429);
+    background-image: url('./img/page.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    border: 3px solid black;
+}
+
+.imageinput .photo {
+    width: 36vw;
+    height: 18vw;
+    background-image: url('https://placehold.co/600x400');
+    background-position: center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+}
+
+.imageinput input {
+    outline: none;
+    border: none;
+    padding: 1vw;
+    background: none;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: black;
+    text-shadow: #000000 1px 0 10px;
+    font-style: normal;
+    font-size: 2vw;
+    text-align: center;
+    transition: .5s;
+    cursor: pointer;
+}
+.imageinput button {
+    outline: none;
+    border: none;
+    padding: 1vw;
+    background: none;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: black;
+    text-shadow: #000000 1px 0 10px;
+    font-style: normal;
+    font-size: 3vw;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imageinput button:hover {
+    transform: scale(1.5);
+}

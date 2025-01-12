@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./assets/modernizr.2.5.3.min.js"></script>
+    <script src="./assets/turn.js"></script>
+    <script src="./assets/main.js"></script>
+</head>
+
+<body>
+    <div class="input-container" style="display: none;">
+        <div class="header">Pasaport Register</div>
+        <div class="group">
+            <div class="label">Firstname Lastname</div>
+            <input type="text" name="" id="nameinput" value="John Doe" disabled>
+        </div>
+        <div class="group">
+            <div class="label">Birth Day</div>
+            <input type="text" name="" id="birthinput" value="1899-01-01">
+        </div>
+        <div class="group">
+            <div class="label">Town</div>
+            <!-- <input type="text" name="" id="" value="Asdqwe"> -->
+            <input type="text" name="" id="location" value="Black Water">
+        </div>
+        <div class="group">
+            <div class="label">Date Issued</div>
+            <input type="text" name="" id="dateissued" value="1899-01-01" disabled>
+        </div>
+        <div class="group">
+            <div class="label">Religion</div>
+            <input type="text" name="" id="religioninput" value="Christian">
+        </div>
+        <div class="group">
+            <button type="button" id="createidcard"></button>
+        </div>
+    </div>
+    <div class="passaport-container" style="display: none;">
+        <div class="page first"></div>
+        <div class="page left">
+            <div class="firstpage">
+                <div class="topinfo">
+                    <div class="frame">
+                        <div class="photo"></div>
+                    </div>
+                </div>
+                <div class="bottominfo">
+                    <div class="group">
+                        <div class="label">Firstname Lastname:</div>
+                        <input type="text" name="" id="nameidcard" value="John Doe" disabled>
+                    </div>
+                    <div class="group">
+                        <div class="label">Town:</div>
+                        <input type="text" name="" id="townidcard" value="Black Water" disabled>
+                    </div>
+                    <div class="group">
+                        <div class="label">Birth Date:</div>
+                        <input type="text" name="" id="birthdateidcard" value="01-01-1899" disabled>
+                    </div>
+                    <div class="group">
+                        <div class="label">Religion:</div>
+                        <input type="text" name="" id="religionidcard" value="Christian" disabled>
+                    </div>
+                    <div class="group">
+                        <div class="label">Date Issued:</div>
+                        <input type="text" name="" id="dateissuedidcard" value="01-11-1899" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page right">
+            <div class="textarea">
+                <textarea name="" id=""></textarea>
+            </div>
+        </div>
+        <div class="page left">
+            <div class="textarea">
+                <textarea name="" id=""></textarea>
+            </div>
+        </div>
+        <div class="page right">
+            <div class="textarea">
+                <textarea name="" id=""></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="imageinput" style="display: none;">
+        <div class="photo"></div>
+        <input type="text" name="" id="imageinput" value="https://placehold.co/600x400">
+        <button>Apply</button>
+    </div>
+</body>
+
+</html>
